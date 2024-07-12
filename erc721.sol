@@ -290,6 +290,7 @@ abstract contract ERC721 is Context, ERC165, IERC721, IERC721Metadata, IERC721Er
                 } else {
                     assembly {
                         revert(add(32, reason), mload(reason))
+                        //시작할자리, 얼마큼까지 가져올지
                     }
                 }
             }
